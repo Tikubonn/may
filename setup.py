@@ -16,11 +16,11 @@ setup(
     license="MIT",
     packages=find_packages(exclude=("test",)),
     install_requires=[],
-		extras_require={
-			"test": [
-				"pyftpdlib",
-			],
-		},
+                extras_require={
+        "test": [
+            "pyftpdlib",
+        ],
+    },
     dependency_links=[],
     entry_points={},
     classifiers=[
