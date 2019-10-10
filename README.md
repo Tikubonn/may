@@ -4,6 +4,8 @@
 ![Python 3.6](https://img.shields.io/badge/Python-3.6-blue.svg "Python 3.6")
 ![MIT](https://img.shields.io/badge/License-MIT-green.svg "MIT")
 
+\| [日本語](README.ja.md) \| English \| 
+
 May provide a FTP wrapper that can control the FTP like as file system. 
 this library is useful than using FTP protocol directory, but applications performance will be wrong, because this trade the performance to abstraction. 
 
@@ -32,7 +34,7 @@ with open_may("localhost", user="tikubonn", passwd="passwd") as may:
     pass
 ```
 
-if you want to use SFTP, you can import `open_may_tls` for alternate of `open_may`.
+if you want to use SFTP, you can import `open_may_tls` alternativelly.
 
 ```python3
 from may import open_may_tls
