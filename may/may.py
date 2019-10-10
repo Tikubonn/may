@@ -293,7 +293,7 @@ class May:
         realpath = self.curdir().joinpath(path)
         if not self.exists(realpath):
             raise FileNotFoundError("file of %r was not found." % (realpath,))
-        responce = self.sendcmd("MDTM %s" % (realpath.as_posix(),))
+        response = self.ftp.sendcmd("MDTM %s" % (realpath.as_posix(),))
         matched = REMDTM.match(response)
         if matched:
             year, month, day, hours, minutes, seconds = map(
